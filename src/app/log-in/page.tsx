@@ -1,6 +1,5 @@
 "use client"
 import Image from 'next/image';
-
 export default function Login() {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center">
@@ -8,7 +7,6 @@ export default function Login() {
         {/* Add a background image here if needed */}
         <Image src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/YTxDupKsU8j.png" alt="Threads Background" layout="fill" />
       </div>
-
       <div className="flex flex-col items-center justify-center z-10">
         <h1 className="text-center text-lg font-semibold">
           Đăng nhập bằng tài khoản Instagram
