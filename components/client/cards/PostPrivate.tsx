@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import usePost from '@/store/post';
 
-const PostPrivacyMenu: React.FC = ({ }) => {
+const PostPrivate: React.FC = ({ }) => {
 
     const { postPrivacy, setPostPrivacy } = usePost();
 
@@ -55,4 +55,4 @@ const PostPrivacyMenu: React.FC = ({ }) => {
     )
 }
 
-export default PostPrivacyMenu
+export default PostPrivate
