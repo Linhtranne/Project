@@ -1,68 +1,49 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "userName": "john_doe",
-            "email": "john@example.com",
-            "name": "John Doe",
-            "avatar": "https://example.com/profiles/john.jpg",
-            "banner": "https://example.com/profiles/john.jpg",
-            "bio": "Web developer and coffee enthusiast.",
-            "follows": [
-                {
-                    "userId": 1,
-                    "created_at": "2024-02-20T11:00:00Z"
-                }
-            ],
-            "friends": [
-                {
-                    "userId": 1,
-                    "add_at": "2024-02-20T11:00:00Z"
-                }
-            ],
-            "groups": [],
-            "created_at": "2024-01-15T08:00:00Z"
-        }
-    ],
-    "posts": [
-        {
-            "post_id": "1234567890",
-            "user_id": "987654321",
-            "content": {
-                "text": "This is an example of a social media post.",
-                "media": [
-                    {
-                        "type": "image",
-                        "url": "https://example.com/image.jpg"
-                    },
-                    {
-                        "type": "video",
-                        "url": "https://example.com/video.mp4"
-                    }
-                ]
-            },
-            "status": "public",
-            "engagement": {
-                "shares": 50,
-                "reactions": {
-                    "like": 200,
-                    "love": 30,
-                    "wow": 15,
-                    "sad": 5,
-                    "angry": 6
-                }
-            }
-        }
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "post_id": 1,
-            "user_id": 2,
-            "image": "",
-            "content": "Sounds interesting! What's the title?",
-            "reactions": [],
-            "created_at": "2024-06-01T12:30:00Z"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "createdAt": "2024-09-01T12:00:00Z",
+      "updatedAt": "2024-09-01T12:00:00Z",
+      "user_name": "john_doe",
+      "display_name": "John Doe",
+      "avatar_type": "Default",
+      "avatar_value": null,
+      "bio": "This is John's bio",
+      "isProfileCustomized": false,
+      "following": [2], 
+      "follower": [3],
+      "threads": [1],
+      "likes": [1]
+    }
+  ],
+  "friendships": [
+    {
+      "id": "1",
+      "createdAt": "2024-09-01T12:00:00Z",
+      "activity_read": false,
+      "user_to_be_followed_id": "2",
+      "user_requested_to_follow_id": "1"
+    }
+  ],
+  "threads": [
+    {
+      "id": "1",
+      "createdAt": "2024-09-01T12:00:00Z",
+      "author_id": "1",
+      "attachment": null,
+      "content": "This is a thread content",
+      "reply_to_id": null,
+      "repost_from_id": null,
+      "likes": [1],
+      "replied_by": [],
+      "reposts": []
+    }
+  ],
+  "likes": [
+    {
+      "id": "1",
+      "thread_id": "1",
+      "user_id": "1"
+    }
+  ]
 }
