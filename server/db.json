@@ -1,49 +1,413 @@
 {
   "users": [
     {
-      "id": "1",
-      "createdAt": "2024-09-01T12:00:00Z",
-      "updatedAt": "2024-09-01T12:00:00Z",
-      "user_name": "john_doe",
-      "display_name": "John Doe",
-      "avatar_type": "Default",
-      "avatar_value": null,
-      "bio": "This is John's bio",
-      "isProfileCustomized": false,
-      "following": [2], 
-      "follower": [3],
-      "threads": [1],
-      "likes": [1]
-    }
+      "id": 1,
+      "userName": "john_doe",
+      "email": "john@example.com",
+      "name": "John Doe",
+      "status": true,
+      "role": false,
+      "password": "12345678",
+      "avatar": "https://example.com/profiles/john.jpg",
+      "banner": "https://example.com/profiles/john.jpg",
+      "bio": "Web developer and coffee enthusiast.",
+      "follows": [
+        {
+          "userId": 1,
+          "created_at": "2024-02-20T11:00:00Z"
+        }
+      ],
+      "friends": [
+        {
+          "userId": 1,
+          "add_at": "2024-02-20T11:00:00Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-01-15T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "userName": "jane_smith",
+      "email": "jane@example.com",
+      "name": "Jane Smith",
+      "password": "12345678",
+      "status": true,
+      "role": false,
+      "avatar": "https://example.com/profiles/jane.jpg",
+      "banner": "https://example.com/profiles/jane.jpg",
+      "bio": "Graphic designer and art lover.",
+      "follows": [
+        {
+          "userId": 2,
+          "created_at": "2024-02-21T09:00:00Z"
+        }
+      ],
+      "friends": [
+        {
+          "userId": 2,
+          "add_at": "2024-02-21T09:00:00Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-01-16T07:00:00Z"
+    },
+    {
+      "id": 3,
+      "userName": "mike_ross",
+      "email": "mike@example.com",
+      "name": "Mike Ross",
+      "password": "12345678",
+      "status": true,
+      "role": false,
+      "avatar": "https://example.com/profiles/mike.jpg",
+      "banner": "https://example.com/profiles/mike.jpg",
+      "bio": "Lawyer and chess enthusiast.",
+      "follows": [
+        {
+          "userId": 3,
+          "created_at": "2024-02-22T10:30:00Z"
+        }
+      ],
+      "friends": [
+        {
+          "userId": 3,
+          "add_at": "2024-02-22T10:30:00Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-01-17T09:30:00Z"
+    },
+    {
+      "id": 4,
+      "userName": "sarah_connor",
+      "email": "sarah@example.com",
+      "name": "Sarah Connor",
+      "password": "12345678",
+      "status": true,
+      "role": false,
+      "avatar": "https://example.com/profiles/sarah.jpg",
+      "banner": "https://example.com/profiles/sarah.jpg",
+      "bio": "Fitness coach and survivalist.",
+      "follows": [
+        {
+          "userId": 4,
+          "created_at": "2024-02-23T08:15:00Z"
+        }
+      ],
+      "friends": [
+        {
+          "userId": 4,
+          "add_at": "2024-02-23T08:15:00Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-01-18T06:15:00Z"
+    },
+    {
+      "id": 5,
+      "userName": "tony_stark",
+      "email": "tony@example.com",
+      "name": "Tony Stark",
+      "password": "12345678",
+      "status": true,
+      "role": false,
+      "avatar": "https://example.com/profiles/tony.jpg",
+      "banner": "https://example.com/profiles/tony.jpg",
+      "bio": "Engineer and inventor.",
+      "follows": [
+        {
+          "userId": 5,
+          "created_at": "2024-02-24T07:45:00Z"
+        }
+      ],
+      "friends": [
+        {
+          "userId": 5,
+          "add_at": "2024-02-24T07:45:00Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-01-19T05:45:00Z"
+    },
+    {
+      "id": 6,
+      "userName": "bruce_wayne",
+      "email": "bruce@example.com",
+      "name": "Bruce Wayne",
+      "password": "12345678",
+      "status": true,
+      "role": false,
+      "avatar": "https://example.com/profiles/bruce.jpg",
+      "banner": "https://example.com/profiles/bruce.jpg",
+      "bio": "Philanthropist and businessman.",
+      "follows": [
+        {
+          "userId": 6,
+          "created_at": "2024-02-25T12:30:00Z"
+        }
+      ],
+      "friends": [
+        {
+          "userId": 6,
+          "add_at": "2024-02-25T12:30:00Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-01-20T10:30:00Z"
+    },
+    {
+      "id": 7,
+      "userName": "clark_kent",
+      "email": "clark@example.com",
+      "name": "Clark Kent",
+      "password": "12345678",
+      "status": true,
+      "role": false,
+      "avatar": "https://example.com/profiles/clark.jpg",
+      "banner": "https://example.com/profiles/clark.jpg",
+      "bio": "Journalist and traveler.",
+      "follows": [
+        {
+          "userId": 7,
+          "created_at": "2024-02-26T09:45:00Z"
+        }
+      ],
+      "friends": [
+        {
+          "userId": 7,
+          "add_at": "2024-02-26T09:45:00Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-01-21T07:45:00Z"
+    },
+    {
+      "id": 8,
+      "userName": "diana_prince",
+      "email": "diana@example.com",
+      "name": "Diana Prince",
+      "password": "12345678",
+      "status": true,
+      "role": false,
+      "avatar": "https://example.com/profiles/diana.jpg",
+      "banner": "https://example.com/profiles/diana.jpg",
+      "bio": "Historian and diplomat.",
+      "follows": [
+        {
+          "userId": 8,
+          "created_at": "2024-02-27T11:15:00Z"
+        }
+      ],
+      "friends": [
+        {
+          "userId": 8,
+          "add_at": "2024-02-27T11:15:00Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-01-22T09:15:00Z"
+    },
+    {
+      "id": 9,
+      "userName": "peter_parker",
+      "email": "peter@example.com",
+      "name": "Peter Parker",
+      "password": "12345678",
+      "status": true,
+      "role": false,
+      "avatar": "https://example.com/profiles/peter.jpg",
+      "banner": "https://example.com/profiles/peter.jpg",
+      "bio": "Photographer and student.",
+      "follows": [
+        {
+          "userId": 9,
+          "created_at": "2024-02-28T10:00:00Z"
+        }
+      ],
+      "friends": [
+        {
+          "userId": 9,
+          "add_at": "2024-02-28T10:00:00Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-01-23T08:00:00Z"
+    },
+    {
+      "id": 10,
+      "userName": "steve_rogers",
+      "email": "steve@example.com",
+      "name": "Steve Rogers",
+      "password": "12345678",
+      "status": true,
+      "role": false,
+      "avatar": "https://example.com/profiles/steve.jpg",
+      "banner": "https://example.com/profiles/steve.jpg",
+      "bio": "Soldier and patriot.",
+      "follows": [
+        {
+          "userId": 10,
+          "created_at": "2024-03-01T12:45:00Z"
+        }
+      ],
+      "friends": [
+        {
+          "userId": 10,
+          "add_at": "2024-03-01T12:45:00Z"
+        }
+      ],
+      "groups": [],
+      "created_at": "2024-01-24T10:45:00Z"
+    },
+
   ],
-  "friendships": [
+  "posts": [
     {
       "id": "1",
-      "createdAt": "2024-09-01T12:00:00Z",
-      "activity_read": false,
-      "user_to_be_followed_id": "2",
-      "user_requested_to_follow_id": "1"
-    }
-  ],
-  "threads": [
+      "title": "A Day in the Mountains",
+      "content": "Hiking in the mountains was incredible. The view was amazing!",
+      "idUser": "6441",
+      "carouselMedia": [
+        {
+          "index": 1,
+          "title": "Mountain View",
+          "mediaUrl": "https://picsum.photos/seed/mountain/800/600",
+          "type": "image"
+        },
+        {
+          "index": 2,
+          "title": "Hiking Trail",
+          "mediaUrl": "https://picsum.photos/seed/trail/800/600",
+          "type": "image"
+        }
+      ],
+      "profilePictureUrl": "https://picsum.photos/seed/user1/200/200",
+      "userName": "NatureLover",
+      "createdAt": "2024-09-05T14:48:00.000Z",
+      "updatedAt": "2024-09-06T10:30:00.000Z",
+      "likeCount": 120,
+      "hasLiked": true,
+      "comments": [
+        {
+          "id": 1,
+          "userName": "JohnDoe",
+          "profilePictureUrl": "https://picsum.photos/seed/johndoe/100/100",
+          "content": "Wow, looks so peaceful!",
+          "createdAt": "2024-09-05T16:20:00.000Z"
+        },
+        {
+          "id": 2,
+          "userName": "JaneDoe",
+          "profilePictureUrl": "https://picsum.photos/seed/janedoe/100/100",
+          "content": "Amazing view! I wish I were there!",
+          "createdAt": "2024-09-05T18:45:00.000Z"
+        }
+      ]
+    },
     {
-      "id": "1",
-      "createdAt": "2024-09-01T12:00:00Z",
-      "author_id": "1",
-      "attachment": null,
-      "content": "This is a thread content",
-      "reply_to_id": null,
-      "repost_from_id": null,
-      "likes": [1],
-      "replied_by": [],
-      "reposts": []
-    }
-  ],
-  "likes": [
+      "id": "2",
+      "title": "Delicious Homemade Pizza",
+      "content": "Tried making pizza at home for the first time, and it turned out great!",
+      "idUser": "6441",
+      "carouselMedia": [
+        {
+          "index": 1,
+          "title": "Pizza Ready",
+          "mediaUrl": "https://picsum.photos/seed/pizza/800/600",
+          "type": "image"
+        },
+        {
+          "index": 2,
+          "title": "Pizza in the Oven",
+          "mediaUrl": "https://picsum.photos/seed/oven/800/600",
+          "type": "image"
+        }
+      ],
+      "profilePictureUrl": "https://picsum.photos/seed/user2/200/200",
+      "userName": "FoodieBaker",
+      "createdAt": "2024-09-01T12:30:00.000Z",
+      "likeCount": 250,
+      "hasLiked": false,
+      "comments": [
+        {
+          "id": 1,
+          "userName": "PizzaLover",
+          "profilePictureUrl": "https://picsum.photos/seed/pizzalover/100/100",
+          "content": "Looks delicious! What's your secret?",
+          "createdAt": "2024-09-01T14:50:00.000Z"
+        }
+      ]
+    },
     {
-      "id": "1",
-      "thread_id": "1",
-      "user_id": "1"
+      "id": "3",
+      "title": "Sunset at the Beach",
+      "content": "Caught the perfect sunset yesterday. Nature never fails to amaze!",
+      "idUser": "6441",
+      "carouselMedia": [
+        {
+          "index": 1,
+          "title": "Beach Sunset",
+          "mediaUrl": "https://picsum.photos/seed/sunset/800/600",
+          "type": "image"
+        }
+      ],
+      "profilePictureUrl": "https://picsum.photos/seed/user3/200/200",
+      "userName": "BeachVibes",
+      "createdAt": "2024-08-28T18:00:00.000Z",
+      "likeCount": 340,
+      "hasLiked": true,
+      "comments": [
+        {
+          "id": 1,
+          "userName": "SeaLover",
+          "profilePictureUrl": "https://picsum.photos/seed/sealover/100/100",
+          "content": "Absolutely stunning!",
+          "createdAt": "2024-08-28T19:30:00.000Z"
+        },
+        {
+          "id": 2,
+          "userName": "SunChaser",
+          "profilePictureUrl": "https://picsum.photos/seed/sunchaser/100/100",
+          "content": "This is pure beauty!",
+          "createdAt": "2024-08-28T20:15:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Sunset at the Beach",
+      "content": "Caught the perfect sunset yesterday. Nature never fails to amaze!",
+      "idUser": "6441",
+      "carouselMedia": [
+        {
+          "index": 1,
+          "title": "Beach Sunset",
+          "mediaUrl": "https://picsum.photos/seed/sunset/800/600",
+          "type": "image"
+        }
+      ],
+      "profilePictureUrl": "https://picsum.photos/seed/user3/200/200",
+      "userName": "BeachVibes",
+      "createdAt": "2024-08-28T18:00:00.000Z",
+      "likeCount": 340,
+      "hasLiked": true,
+      "comments": [
+        {
+          "id": 1,
+          "userName": "SeaLover",
+          "profilePictureUrl": "https://picsum.photos/seed/sealover/100/100",
+          "content": "Absolutely stunning!",
+          "createdAt": "2024-08-28T19:30:00.000Z"
+        },
+        {
+          "id": 2,
+          "userName": "SunChaser",
+          "profilePictureUrl": "https://picsum.photos/seed/sunchaser/100/100",
+          "content": "This is pure beauty!",
+          "createdAt": "2024-08-28T20:15:00.000Z"
+        }
+      ]
     }
   ]
 }
